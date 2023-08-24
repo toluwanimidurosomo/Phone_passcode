@@ -1,0 +1,149 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@800&display=swap');
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainCont {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    /* viewport height */
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.innerCont {
+    width: 380px;
+    height: 842px;
+    padding: 20px;
+    border: 12px black solid;
+    border-radius: 60px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../pics/gradient-background.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 900px 120%;
+    /* background-color: aquamarine; */
+    /* display: flex; */
+    /* gap: 40px; */
+}
+.upperPart {
+    align-items: center;
+    display: flex;
+}
+
+.upperPart {
+    display: flex;
+    color: #ffffff;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    
+
+    gap: 15px;
+}
+
+.time {
+    padding: 8px;
+    font-size: 100px;
+    
+
+}
+.battery{
+    width: 28px;
+    height: 28px;
+    color: #D9D9D9;
+    top:37px;
+    left: 182px;
+    
+
+}
+
+
+.camLens {
+    border: 5px black solid;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    /* margin:0 250px 150px 0; */
+
+}
+
+#displayCont {
+    width: 321px;
+    height: 85px;
+    border-radius: 16px;
+    background-color:#D9D9D9;
+    padding: 15px;
+    word-wrap: break-word;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 170px 0 10px 0;
+    color: black;
+    opacity: 60%;
+    display: flex;
+    font-size: 35px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+#numGrid {
+    display: grid;
+    padding-top: 20px;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+    min-height: 20vh;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: minmax(20px) repeat(5, 50px);
+}
+
+.numbers{
+    cursor: pointer;
+    width: 62px;
+    height: 62px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #D9D9D9;
+    border-radius: 100%;
+    opacity: 60%;
+    /* outline: none; */
+    /* background-color: rgba(255, 255, 255, .75); */
+}
+
+#delete{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 25px;
+    visibility: hidden;
+}
+
+#numGrid>button:hover {
+    background-color:antiquewhite;
+}
+
+.navbutton{
+    width: 168px;
+    height: 10px;
+    background-color:#D9D9D9;
+    display: flex;
+    justify-content: center;
+    border-radius: 44px;
+    opacity: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 125px;
+
+}
